@@ -41,6 +41,7 @@ function Login(props) {
 
     if( email.trim() === "" || password.trim() === "" ) {
       mostrarAlerta("Todos los campos son obligatorios","alerta-error")
+      return
     }
 
     iniciarSesion({
